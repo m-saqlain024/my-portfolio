@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+:root {
+  --primary: #173b6c;
+  --secondary: #040b14;
+
+  /*========== Light Colors ==========*/
+  --body-light: #149ddd;
+
+  /*========== Font and typography ==========*/
+  --behavior: smooth;
+}
+
+
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

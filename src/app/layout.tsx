@@ -1,9 +1,10 @@
-import "./globals.css";
+import "../style/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import dynamic from "next/dynamic";
 import { ChildrenProps } from "@/types/types";
 import { classNames } from "../utils";
+import { MenuBar } from "@/components/matarial";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -38,7 +39,12 @@ export default function RootLayout({ children }: ChildrenProps) {
           inter.className
         )}
       >
-        <DynamicProvider>{children}</DynamicProvider>
+        <DynamicProvider>
+          
+            <MenuBar/>
+            {children}
+        
+        </DynamicProvider>
       </body>
     </html>
   );
