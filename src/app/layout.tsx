@@ -2,7 +2,7 @@ import "../style/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ChildrenProps } from "@/types/types";
-import { classNames } from "../utils";
+import { classNames } from "../utils/utils";
 import { Navbar } from "@/components";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,17 +18,19 @@ export const metadata: Metadata = {
   },
 };
 
+
 export default function RootLayout({ children }: ChildrenProps) {
+  const lang:string = "en";
   return (
-    <html lang="en">
+    <html lang={lang}>
       <body
         className={classNames(
           "h-full scroll-smooth antialiased",
-          inter.className
+          inter.className,
         )}
       >
-        <Navbar/>
-       
+        <Navbar />
+        {children}
       </body>
     </html>
   );
