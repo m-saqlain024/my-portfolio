@@ -1,13 +1,11 @@
+import React from "react";
 import "../style/globals.css";
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { ChildrenProps } from "@/types/types";
-import { classNames } from "../utils/utils";
-import { Navbar } from "@/components";
+import { Navbar } from "../components";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: {
     default: "Muhammad Saqlain",
     template: "%s | Software Engineering",
@@ -18,20 +16,12 @@ export const metadata: Metadata = {
   },
 };
 
-
-export default function RootLayout({ children }: ChildrenProps) {
-  const lang:string = "en";
+export default function RootLayout() {
+  const lang = "en";
   return (
-    <html lang={lang}>
-      <body
-        className={classNames(
-          "h-full scroll-smooth antialiased",
-          inter.className,
-        )}
-      >
-        <Navbar />
-        {children}
-      </body>
-    </html>
+    <div>
+      <Navbar />
+      this is a nocve 
+    </div>
   );
 }
