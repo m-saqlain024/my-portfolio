@@ -1,14 +1,11 @@
-import { HeroSection } from '@/components/matarial';
-import React from 'react'
-// import { HeroSection } from "";
-
-
+import { Navbar } from "@/components";;
+import React from "react";
 
 export default function page() {
   return (
     <div>
-      <HeroSection/>
+
+      this is a data 
     </div>
   );
 }
-
