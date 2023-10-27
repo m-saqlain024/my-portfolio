@@ -1,9 +1,24 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+/* eslint-disable no-undef */
+module.exports = {
+  reactStrictMode: true,
   images: {
-    domains: ["tailwindui.com", "images.unsplash.com"],
-    // domains: [],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "p16-sign-useast2a.tiktokcdn.com",
+      },
+      {
+        protocol: "https",
+        hostname: "p16-sign-va.tiktokcdn.com",
+      },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "tailwindui.com",
+      },
+    ],
   },
 };
-
-module.exports = nextConfig;
