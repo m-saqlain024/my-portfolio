@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const BgLine = () => {
-  return (
-    <div>
-      ok
-    </div>
-  )
-}
+  return <div>ok</div>;
+};
 
-export default BgLine
+export default BgLine;
