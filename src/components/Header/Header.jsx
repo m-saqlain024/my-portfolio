@@ -4,7 +4,6 @@ import { Dialog, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
   CalendarIcon,
-  ChartPieIcon,
   DocumentDuplicateIcon,
   FolderIcon,
   HomeIcon,
@@ -13,12 +12,16 @@ import {
 } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Dashboard", href: "#", icon: HomeIcon, current: true },
-  { name: "Team", href: "#", icon: UsersIcon, current: false },
+  { name: "Home", href: "#", icon: HomeIcon, current: true },
+  { name: "SErvices", href: "#", icon: UsersIcon, current: false },
   { name: "Projects", href: "#", icon: FolderIcon, current: false },
-  { name: "Calendar", href: "#", icon: CalendarIcon, current: false },
-  { name: "Documents", href: "#", icon: DocumentDuplicateIcon, current: false },
-  { name: "Reports", href: "#", icon: ChartPieIcon, current: false },
+  { name: "About", href: "#", icon: CalendarIcon, current: false },
+  {
+    name: "Contact Me",
+    href: "#",
+    icon: DocumentDuplicateIcon,
+    current: false,
+  },
 ];
 
 function classNames(...classes) {
@@ -185,18 +188,6 @@ export default function Example() {
             />
           </a>
         </div>
-
-        <main className="lg:pl-20">
-          <div className="xl:pl-96">
-            <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-6">
-              {/* Main area */}
-            </div>
-          </div>
-        </main>
-
-        <aside className="fixed inset-y-0 left-20 hidden w-96 overflow-y-auto border-r border-gray-200 px-4 py-6 sm:px-6 lg:px-8 xl:block">
-          {/* Secondary column (hidden on smaller screens) */}
-        </aside>
       </div>
     </>
   );

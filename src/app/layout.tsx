@@ -1,7 +1,7 @@
 import React from "react";
 import "../style/globals.css";
 import { Inter } from "next/font/google";
-import { Header } from "../components";
+import { Header, Hero } from "../components";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +21,9 @@ export default function RootLayout() {
   return (
     <div>
       <Header />
-      this is a nocve
+      <div className="lg:ml-22">
+        <Hero />
+      </div>
     </div>
   );
 }
