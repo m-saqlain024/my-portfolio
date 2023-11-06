@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="w-full h-screen bg-slate-400 ">
+    <div className="h-screen w-full bg-slate-400 ">
       <h1 className="pl-72"> this is new project </h1>
     </div>
   );
-}
+};
 
-export default HeroSection
+export default HeroSection;

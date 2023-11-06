@@ -1,7 +1,7 @@
 import React from "react";
 import "../style/globals.css";
 import { Inter } from "next/font/google";
-import { Navbar } from "../components";
+import { Header } from "../components";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,8 +20,8 @@ export default function RootLayout() {
   const lang = "en";
   return (
     <div>
-      <Navbar />
-      this is a nocve 
+      <Header />
+      this is a nocve
     </div>
   );
 }
