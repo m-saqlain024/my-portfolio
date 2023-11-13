@@ -16,14 +16,17 @@ export const metadata = {
   },
 };
 
-export default function RootLayout() {
+export default function RootLayout({children}) {
   const lang = "en";
   return (
     <div>
       <Header />
-      <div className="lg:ml-22">
-        <Hero />
+      <>
+      {children}
+      <div>
+        footer
       </div>
+      </>
     </div>
   );
 }
