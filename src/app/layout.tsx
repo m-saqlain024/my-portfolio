@@ -1,9 +1,10 @@
 import React from "react";
+import PropTypes from 'prop-types'; // Import PropTypes
 import "../../style/globals.css";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import { Header } from "../components";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: {
@@ -17,7 +18,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  const lang = "en";
+  // const lang = "en"; // 'lang' variable is currently not used
   return (
     <div>
       <Header />
@@ -28,3 +29,8 @@ export default function RootLayout({ children }) {
     </div>
   );
 }
+
+// Define propTypes for RootLayout component
+RootLayout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
