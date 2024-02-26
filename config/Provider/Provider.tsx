@@ -2,7 +2,7 @@
 
 import React from "react";
 import { ThemeProvider } from "next-themes";
-import type { ChildrenProps } from "../../src/types/types";
+import type { ChildrenProps } from "../../types/types";
 
 function Provider({ children }: ChildrenProps) {
   const [hydration, setHydration] = React.useState(false);

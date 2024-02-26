@@ -1,5 +1,5 @@
 "use client";
-import { Fragment } from "react";
+import React from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
@@ -91,7 +91,6 @@ export default function Example() {
                     </Menu.Button>
                   </div>
                   <Transition
-                    as={Fragment}
                     enter="transition ease-out duration-200"
                     enterFrom="transform opacity-0 scale-95"
                     enterTo="transform opacity-100 scale-100"

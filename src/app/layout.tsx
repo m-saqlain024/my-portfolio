@@ -1,7 +1,7 @@
 import React from "react";
-import "../style/globals.css";
+import "../../style/globals.css";
 import { Inter } from "next/font/google";
-import { Header, Hero } from "../components";
+import { Header } from "../components";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,16 +16,14 @@ export const metadata = {
   },
 };
 
-export default function RootLayout({children}) {
+export default function RootLayout({ children }) {
   const lang = "en";
   return (
     <div>
       <Header />
       <>
-      {children}
-      <div>
-        footer
-      </div>
+        {children}
+        <div>footer</div>
       </>
     </div>
   );
