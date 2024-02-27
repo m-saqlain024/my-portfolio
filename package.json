@@ -1,52 +1,23 @@
 {
+  "name": "my-portfolio",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build",
     "dev": "next dev",
+    "build": "next build",
     "start": "next start",
-    "prepare": "husky install",
-    "nextsitemap": "next build && next-sitemap --config next-sitemap.config.js",
-    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore --max-warnings=0",
-    "postinstall": "node -e \"if (process.env.NODE_ENV !== 'production'){process.exit(1)} \" || husky install",
-    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|jsx|json|ts|tsx)\"",
-    "check-format": "yarn prettier -- --list-different",
-    "validate": "npm-run-all --parallel check-format && lint-staged",
-    "pre-commit-lint": "yarn check-format && yarn lint-staged"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.16",
-    "@heroicons/react": "^2.0.18",
-    "@react-icons/all-files": "^4.1.0",
-    "@types/gtag.js": "^0.0.14",
-    "autoprefixer": "^10.4.15",
-    "axios": "^1.5.0",
-    "eslint": "8.47.0",
-    "eslint-config-next": "13.4.16",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-import": "^2.28.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "lint-staged": "^14.0.0",
-    "next": "latest",
-    "next-theme": "^0.1.5",
-    "node-html-parser": "^6.1.10",
-    "npm": "^10.1.0",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.30",
-    "prettier": "^3.0.1",
+    "@types/node": "20.11.20",
+    "@types/react": "18.2.59",
+    "@types/react-dom": "18.2.19",
+    "autoprefixer": "10.4.17",
+    "next": "14.1.0",
+    "postcss": "8.4.35",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-native-dropdown-picker": "^5.4.6",
-    "react-player": "^2.13.0",
-    "tailwindcss": "^3.3.3"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "devDependencies": {
-    "@tailwindcss/forms": "^0.5.6",
-    "@types/node": "20.6.2",
-    "@types/react": "18.2.22",
-    "husky": "^8.0.0",
-    "prettier-plugin-tailwindcss": "^0.5.2"
+    "tailwindcss": "3.4.1",
+    "typescript": "5.3.3"
   }
 }

@@ -1,36 +1,22 @@
-import React from "react";
-import PropTypes from 'prop-types'; // Import PropTypes
-import "../../style/globals.css";
-// import { Inter } from "next/font/google";
-import { Header } from "../components";
+import './globals.css'
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 
-// const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: {
-    default: "Muhammad Saqlain",
-    template: "%s | Software Engineering",
-  },
-  description: "this is a my website for pratices",
-  openGraph: {
-    images: "/og.png",
-  },
-};
-
-export default function RootLayout({ children }) {
-  // const lang = "en"; // 'lang' variable is currently not used
-  return (
-    <div>
-      <Header />
-      <>
-        {children}
-        <div>footer</div>
-      </>
-    </div>
-  );
+export const metadata: Metadata = {
+  title: 'Muhammad Saqlain',
+  description: 'Porfolio website',
 }
 
-// Define propTypes for RootLayout component
-RootLayout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
+  return (
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
+    </html>
+  )
+}
