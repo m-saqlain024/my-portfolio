@@ -7,9 +7,9 @@ function Logo() {
       <Image
         src="/images/logo.jpg"
         alt={"loading"}
-        width={100}
-        height={100}
-        className="rounded-xl"
+        width={400}
+        height={400}
+        className="rounded-full my-4 border-4 border-white"
       />
     </div>
   );
