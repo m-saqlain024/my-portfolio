@@ -5,8 +5,7 @@ function Navbar() {
   return (
     <>
       <div className="flex-1 flex flex-col min-h-0 bg-gray-900">
-        <div className="flex items-center justify-center px-5 text-white">
-          <div className="bg-slate-200 my-3"></div>
+        <div className="flex items-center justify-center px-5 object-contain">
           <Logo />
         </div>
         <div className="flex-1 flex flex-col  bg-gray-900 overflow-y-auto">

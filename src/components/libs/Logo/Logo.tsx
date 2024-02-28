@@ -1,17 +1,17 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
 
 function Logo() {
   return (
-    <div className="rounded-2xl">
+    <>
       <Image
         src="/images/logo.jpg"
-        alt={"loading"}
+        alt={"Picture of the author"}
         width={400}
         height={400}
         className="rounded-full my-4 border-4 border-white"
       />
-    </div>
+    </>
   );
 }
 
