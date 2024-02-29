@@ -1,4 +1,4 @@
-import { Navbar } from "@/components";
+import { Sidebar } from "@/components";
 import "../style/globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="h-screen">
           <div className="hidden md:flex md:w-64 md:flex-col md:fixed md:inset-y-0">
-            <Navbar/>
+            <Sidebar />
           </div>
           <div className="md:pl-64 flex flex-col">
             <main className="flex-1 absolute inset-0 md:left-64 pt-16 overflow-hidden border-1 border-red-500">
