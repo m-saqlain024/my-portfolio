@@ -1,5 +1,5 @@
 import React from "react";
-import { Logo, Navigation } from "@/components";
+import { Footer, Logo, Navigation } from "@/components";
 
 function Sidebar() {
   return (
@@ -22,6 +22,10 @@ function Sidebar() {
           <nav className="flex-1 text-white space-y-1">
             <Navigation />
           </nav>
+        </div>
+
+        <div>
+          <Footer />
         </div>
       </div>
     </>
