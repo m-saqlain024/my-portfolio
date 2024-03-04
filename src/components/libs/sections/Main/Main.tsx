@@ -6,16 +6,19 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 const Main = () => {
   return (
-    <div id="home" className="w-full h-screen text-center">
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
+    <div className="w-full h-screen text-center">
+      <div className="w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="uppercase text-sm tracking-widest text-gray-600">
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
-          <h1 className="py-4 text-gray-700">
-            Hi, I&#39;m <span className="text-[#5651e5]">Muhammad Saqlain</span>
+          <h1 className="py-4 text-gray-700 text-xl">
+            Hi, I&#39;m{" "}
+            <span className="text-[#5651e5] text-3xl">Muhammad Saqlain</span>
           </h1>
-          <h1 className="py-2 text-gray-700">A Front-End Web Developer</h1>
+          <h1 className="py-2 text-gray-700 text-3xl">
+            A Front-End Web Developer
+          </h1>
           <p className="py-4 text-gray-600 sm:max-w-[70%] m-auto hyphens-manual ">
             I’m focused on building responsive front-end web applications
             integrating back-end technologies.
